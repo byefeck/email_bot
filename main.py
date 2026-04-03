@@ -41,7 +41,7 @@ def history_and_msg_id(service, history_id):
     query = service.users().history().list(
         userId="me",
         startHistoryId=history_id,
-        historyTypes=["messagesAdded"]
+        historyTypes=["messageAdded"]
     ).execute()
 
     history = query.get('history', [])
