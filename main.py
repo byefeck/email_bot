@@ -220,6 +220,8 @@ async def mail_loop():
     if not history_id:
         profile = service.users().getProfile(userId='me').execute()
         history_id = profile['historyId']
+        state["history_id"] = history_id
+        save_state(state)
 
     while True:
         try:
