@@ -203,7 +203,7 @@ def format_msg(msg_dict):
         f'Тема: {subject}\n\n'
         f'Текст:\n'
         f'{safe_cut(text)}\n\n'
-        f'Вложения: {'есть' if has_att else 'нет'}'
+        f'Вложения: {"есть" if has_att else "нет"}'
     )
     return safe_cut(message, 4000)
 
