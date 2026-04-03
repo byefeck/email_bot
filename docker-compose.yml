@@ -1,7 +1,7 @@
 services:
   telegram-bot:
     build: .
-    container_name: pizda_svabra_big
+    container_name: email_bot
     environment:
       - TOKEN=${TOKEN}
     volumes:

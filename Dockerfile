@@ -4,14 +4,11 @@ WORKDIR /app
 
 # Копируем файлы requirements (если существует) и остальные файлы
 COPY requirements.txt* ./
-COPY bot.py .
-COPY комплименты.csv .
-COPY цитаты.csv .
-COPY db.py .
-COPY DATA_SHA2.sqlite .
+COPY main.py .
+COPY state.json .
 
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Запускаем бота
-CMD ["python", "bot.py"]
+CMD ["python", "main.py"]
