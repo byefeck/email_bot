@@ -1,0 +1,84 @@
+2026-04-02 10:54:40,068 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:54:58,536 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:55:14,892 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:55:36,681 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:55:51,461 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:56:05,679 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:56:17,354 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 12 seconds.
+Original description: Too Many Requests: retry after 12
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 10:56:39,788 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 10:57:42,598 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:57:49,869 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:57:55,590 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:01,423 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:08,972 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:30,012 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:35,618 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:41,856 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:58:47,718 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:59:29,963 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 10:59:35,931 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 11:00:23,776 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 11:00:29,468 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 11:00:35,305 | ERROR | Ошибка: Telegram server says - Bad Request: text is too long
+2026-04-02 11:03:19,592 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:03:25,031 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:03:30,632 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:03:36,088 | ERROR | Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10bb54830>
+2026-04-02 11:04:40,928 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:26:26,732 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:26:41,841 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:26:57,080 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:27:06,492 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 9 seconds.
+Original description: Too Many Requests: retry after 9
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:27:25,880 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:27:41,369 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:27:57,781 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:28:06,515 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 9 seconds.
+Original description: Too Many Requests: retry after 9
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:28:13,717 | ERROR | Ошибка: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-02 11:28:28,072 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:28:42,695 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:28:57,098 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:29:04,212 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 11 seconds.
+Original description: Too Many Requests: retry after 11
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:29:15,621 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 3 seconds.
+Original description: Too Many Requests: retry after 3
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:29:30,207 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:29:44,880 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:30:01,619 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:30:10,405 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 11 seconds.
+Original description: Too Many Requests: retry after 11
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:30:31,237 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:30:48,349 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:31:04,415 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:31:12,645 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 9 seconds.
+Original description: Too Many Requests: retry after 9
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:31:33,175 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:31:47,760 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:32:01,766 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:32:10,144 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 14 seconds.
+Original description: Too Many Requests: retry after 14
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:32:24,130 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 3 seconds.
+Original description: Too Many Requests: retry after 3
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:32:38,390 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:32:53,337 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:33:08,643 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:33:16,800 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 13 seconds.
+Original description: Too Many Requests: retry after 13
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:33:29,438 | ERROR | Ошибка: Telegram server says - Flood control exceeded on method 'SendMessage' in chat @dzshka_pi25_4. Retry in 3 seconds.
+Original description: Too Many Requests: retry after 3
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2026-04-02 11:33:45,420 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
+2026-04-02 11:34:00,290 | ERROR | Ошибка: Telegram server says - Bad Request: message is too long
