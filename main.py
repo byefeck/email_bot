@@ -22,6 +22,7 @@ logging.basicConfig(
 )
 
 CHAT_ID = os.getenv("CHAT_ID")
+THREAD_ID = os.getenv("THREAD_ID")
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 STATE_FILE = 'state.json'
 
@@ -197,13 +198,13 @@ def format_msg(msg_dict):
     text = msg_dict['text']
     has_att = msg_dict['has_att']
     message = (
-        f'Новое письмо!\n'
-        f'Имя отправителя: {sender_name}\n'
-        f'Почта отправителя: {sender_email}\n\n'
-        f'Тема: {subject}\n\n'
-        f'Текст:\n'
+        f'📨 Новое письмо!\n'
+        f'👻 Имя отправителя: {sender_name}\n'
+        f'📧 Почта отправителя: {sender_email}\n'
+        f'📎 Прикрепленные файлы: {"есть" if has_att else "нет"}\n\n'
+        f'🙉 Тема: {subject}\n'
+        f'💬 Текст:\n\n'
         f'{safe_cut(text)}\n\n'
-        f'Вложения: {"есть" if has_att else "нет"}'
     )
     return safe_cut(message, 4000)
 
@@ -231,7 +232,8 @@ async def mail_loop():
                 send = format_msg(msg_dict)
                 await bot.send_message(
                     CHAT_ID,
-                    send
+                    send,
+                    message_thread_id=THREAD_ID
                 )
                 await asyncio.sleep(5)
             history_id = new_history_id
