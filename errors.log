@@ -92,3 +92,4 @@ Original description: Too Many Requests: retry after 3
 2026-04-06 09:30:59,816 | ERROR | Ошибка: Telegram server says - Bad Request: business connection not found
 2026-04-06 09:31:05,595 | ERROR | Ошибка: Telegram server says - Bad Request: business connection not found
 2026-04-06 09:31:11,140 | ERROR | Ошибка: Telegram server says - Bad Request: business connection not found
+2026-04-06 09:53:07,230 | ERROR | Message 19d6183b55ef30d9 not found (skipped): <HttpError 404 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/19d6183b55ef30d9?alt=json returned "Requested entity was not found.". Details: "[{'message': 'Requested entity was not found.', 'domain': 'global', 'reason': 'notFound'}]">

@@ -168,13 +168,22 @@ def get_text(msg):
 
     return ""
         
+def safe_get_message(service, msg_id):
+    try:
+        return service.users().messages().get(
+            userId="me",
+            id=msg_id
+        ).execute()
+    except Exception as e:
+        logging.error(f"Message {msg_id} not found (skipped): {e}")
+        return None
 
 def parse_message(service, msg_id):
-    msg = service.users().messages().get(
-        userId="me",
-        id=msg_id
-    ).execute()
-    
+    msg = safe_get_message(service, msg_id)
+
+    if not msg:
+        return None
+
     headers = msg["payload"]["headers"]
 
     subject = next((i['value'] for i in headers if i['name'] == 'Subject'), 'Без темы')
@@ -182,7 +191,7 @@ def parse_message(service, msg_id):
     name, email = parse_sender(sender)
     text = get_text(msg)
     has_att = has_attachments(msg)
-    
+
     return {
         'sender_name': name,
         'sender_email': email,
@@ -228,20 +237,25 @@ async def mail_loop():
         try:
             msg_ids, new_history_id = history_and_msg_id(service, history_id)
             for msg_id in msg_ids:
-                msg_dict = parse_message(service, msg_id)
-                send = format_msg(msg_dict)
-                await bot.send_message(
-                    CHAT_ID,
-                    send,
-                    message_thread_id=THREAD_ID
-                )
-                await asyncio.sleep(5)
+                try:
+                    msg_dict = parse_message(service, msg_id)
+                    if not msg_dict:
+                        continue
+                    send = format_msg(msg_dict)
+                    await bot.send_message(
+                        chat_id=CHAT_ID,
+                        text=send,
+                        message_thread_id=int(THREAD_ID) if THREAD_ID else None
+                    )
+                    await asyncio.sleep(5)
+                except Exception as e:
+                    logging.error(f"Ошибка обработки msg {msg_id}: {e}")
+                    continue
             history_id = new_history_id
             state['history_id'] = history_id
             save_state(state)
         except Exception as e:
-            logging.error(f"Ошибка: {e}")
-
+            logging.error(f"Ошибка mail_loop: {e}")
         await asyncio.sleep(5)
 
 async def main():
