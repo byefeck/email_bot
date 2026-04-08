@@ -27,6 +27,9 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 STATE_FILE = 'state.json'
 
 def load_state():
+    if os.path.exists(STATE_FILE):
+        save_state({})
+        return {}
     with open(STATE_FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
 
@@ -48,14 +51,14 @@ def history_and_msg_id(service, history_id):
     history = query.get('history', [])
     new_history_id = query.get('historyId', history_id)
 
-    msg_ids = []
+    msg_ids = set()
 
     for i in history:
         messages = i.get('messagesAdded', [])
         for m in messages:
-            msg_ids.append(m['message']['id'])
+            msg_ids.add(m['message']['id'])
     
-    return msg_ids, new_history_id
+    return list(msg_ids), new_history_id
 
 def decode(data):
     if not data:
