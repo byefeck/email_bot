@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from aiogram import Bot, Dispatcher
 from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
 from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
@@ -39,6 +40,10 @@ def save_state(state):
 
 def get_service():
     creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    if creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        with open('token.json', 'w') as f:
+            f.write(creds.to_json())
     return build('gmail', 'v1', credentials=creds)
 
 def history_and_msg_id(service, history_id):
